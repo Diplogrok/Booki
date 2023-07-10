@@ -15,7 +15,7 @@
     font-size: 18px;
 }
 
-/****** 1 ***********/
+/****** Header ***********/
 
 header {
     display: flex;
@@ -63,15 +63,17 @@ a:link, a:visited, a:active
     margin: 0;
 }
 
-/****** 1 ***********/
-
-/****** 2 ***********/
 .title {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     line-height: 1em;
     padding: 30px 50px 35px 50px;
+}
+
+.head-subtitle {
+    margin: 0;
+    padding-top: 1em;
 }
 input {
     border: none;
@@ -136,8 +138,8 @@ input {
 .sub:hover {
     background-color: #0256d4;
 }
-/****** 2 ***********/
-/****** 3 ***********/
+
+/****** Filtres ***********/
 
 .filtres {
     display: flex;
@@ -197,7 +199,9 @@ input {
 .logoinfo {
     margin-right: 10px;
 }
-/****** 3 ***********/
+
+/****** Body ***********/
+
 
 body {
     display: flex;
@@ -426,6 +430,7 @@ footer {
 .footer-title {
     margin: 0;
 }
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
