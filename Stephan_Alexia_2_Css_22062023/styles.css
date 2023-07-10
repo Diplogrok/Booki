@@ -20,8 +20,8 @@
 header {
     display: flex;
     justify-content: space-between;
-
 }
+
 .logo {
     width: 61.09px;
     height: 19px;
@@ -30,18 +30,17 @@ header {
 
 .links {
     padding-top: 14px;
+    padding-right: 25px;
 }
 
-.linka {
-    margin-right: 25px;
-    margin-left: 68px;
-    border:transparent;
+.linkr {
     padding: 14px 0px;
-
+    margin-inline-start: 68px;
 }
-.linkh {
-    border:transparent;
-    padding: 14px 0px;
+
+.linkr:hover{
+    color: #0065FC;
+    border-top: solid #0065FC 2px;
 }
 
 a:link, a:visited, a:active
@@ -50,15 +49,8 @@ a:link, a:visited, a:active
     text-decoration: none;
 }
 
-.linka:hover{
-    color: #0065FC;
-    border-top: solid #0065FC 2px;
-}
 
-.linkh:hover{
-    color: #0065FC;
-    border-top: solid #0065FC 2px;
-}
+
 .section-title {
     margin: 0;
 }
@@ -163,16 +155,7 @@ input {
 .fa-money-bill-wave, .fa-person, .fa-heart, .fa-fire {
     padding-right: 10px;
 } 
-.eco:hover{
-    background-color: #DEEBFF;
-}
-.famille:hover{
-    background-color: #DEEBFF;
-}
-.romance:hover{
-    background-color: #DEEBFF;
-}
-.pépites:hover{
+.ico:hover{
     background-color: #DEEBFF;
 }
 
