@@ -1,9 +1,19 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 
 }
 
+h1 {
+    font-size: 22px;
+}
+h2{
+    font-size: 18px;
+}
+h3{
+    font-size: 16px;
+}
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -29,6 +39,8 @@ header {
 }
 
 .links {
+    display: flex;
+    flex-direction: row;
     padding-top: 14px;
     padding-right: 25px;
 }
@@ -49,23 +61,14 @@ a:link, a:visited, a:active
     text-decoration: none;
 }
 
-
-
-.section-title {
-    margin: 0;
-}
-
 .title {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    line-height: 1em;
     padding: 30px 50px 35px 50px;
 }
-
 .head-subtitle {
-    margin: 0;
-    padding-top: 1em;
+    padding-top: 8px;
 }
 input {
     border: none;
@@ -73,7 +76,6 @@ input {
     outline: none;
     font-size: 18px;
     font-weight: bold;
-
 }
 .cta {
     display: flex;
@@ -104,8 +106,8 @@ input {
     align-items: center;
     background-color: white;
     padding: 0px 24px 0px 24px;
-    border-top: solid #d9d9d9;
-    border-bottom: solid #d9d9d9;
+    border-top: solid #d9d9d9 1px;
+    border-bottom: solid #d9d9d9 1px;
 
 }
 
@@ -116,10 +118,12 @@ input {
     border: transparent;
     padding: 15px 16px;
     border-radius: 0px 15px 15px 0px;
+    
 }
 
 #submit {
     color: white;
+    cursor: pointer;
 }
 .fa-magnifying-glass {
     color: white;
@@ -138,14 +142,16 @@ input {
     align-items: center;
     margin-top: 35px;
     margin-left: 50px;
-    font-size: 17px;
     font-weight: bold;
     margin-bottom: 35px;
+}
 
+.filtre-title {
+    padding-right: 15px;
 }
 
 .eco, .famille, .romance, .pépites {
-    margin-left: 15px;
+    font-size: 17px;
     margin-right: 15px;
     border: solid #d9d9d9 2px;
     border-radius: 25px;
@@ -166,20 +172,21 @@ input {
     margin-left: 50px;
     margin-bottom: 35px;
 }
-
+/****** test border autour du logo free font awesome ***********/
 .fa-info {
     display: none;
-    text-align: center;
+    justify-content: center;
     font-size: small;
-    border: solid #DEEBFF 1px;
+    border: solid #d9d9d9 1px;
     border-radius: 50px;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     margin-right: 10px;
 }
-
-.logoinfo {
+/*****************/
+.fa-circle-info {
     margin-right: 10px;
+    color: #d9d9d9;
 }
 
 /****** Body ***********/
@@ -198,14 +205,6 @@ body {
     box-sizing: border-box;
 }
 
-.h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 22px;
-}
-.h2{
-    font-size: 17px;
-}
 .card {
     background-color: white;
     border-radius: 20px;
@@ -215,11 +214,6 @@ body {
 
 .card img {
     object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-    
 }
 
 .euro {
@@ -242,6 +236,11 @@ body {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+}
+
+.card-subtitle {
+    font-size: 14px;
+
 }
 
 /****** Hebergements ***********/
@@ -289,18 +288,11 @@ body {
 
 }
 
-.hebergements-cards .card-subtitle {
-    margin: 0;
-}
-
 .hebergements-cards .card-rating {
     padding-top: 8px;
 
 }
 
-.more {
-    font-weight: bold;
-}
 
 /****** Populaires ***********/
 .populaires {
@@ -339,10 +331,6 @@ body {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
-}
-
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
@@ -364,7 +352,10 @@ body {
 .activités-title {
 
     padding-bottom: 30px;
+}
 
+.activités-subtitle {
+    padding: 20px 19px;
 }
 .activités-cards img {
     width: 297px;
@@ -382,10 +373,6 @@ body {
     
 }
 
-.activités-cards .card-txt {
-    padding-left: 19px;
-}
-
 /****** footer ***********/
 
 footer {
@@ -393,8 +380,7 @@ footer {
     flex-direction: row;
     justify-content:flex-start;
     padding-left: 50px;
-    padding-right: 50px;
-    
+    padding-right: 50px;    
 }
 
 .a-propos, .nos-hebergements, .assistance {
@@ -408,16 +394,16 @@ footer {
 
 .footerlink {
     margin-top: 15px;
+   
 }
-.footer-title {
-    margin: 0;
-}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -429,6 +415,7 @@ footer {
     .populaires {
         width: 100%;
         margin-top: 50px;
+        
     }
 
     .populaires-cards {
@@ -438,7 +425,8 @@ footer {
     }
 
     .populaires-cards .card {
-        width: 30%;
+        width: 50%;
+
     }
 
     .populaires-cards .card-title {
@@ -448,15 +436,25 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activités-cards .card img {
+        width: 100%;
+
+       
+    }
+    .activités-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
     /* ... */
-.linka:hover {
-    border-top: solid #0065FC 2px;
-}
-.linkh:hover {
-    border-top: solid #0065FC 2px;
-}
+
+
 }
