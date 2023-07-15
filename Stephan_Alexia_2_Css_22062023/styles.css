@@ -559,4 +559,47 @@ footer {
         order: 3;
     }
     
+    .hebergements{
+    margin-top: 15px;
+    }
+    .hebergements-cards .card{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .hebergements-cards .card:nth-of-type(1) { order: 1; }
+    .hebergements-cards .card:nth-of-type(2) { order: 6; }
+    .hebergements-cards .card:nth-of-type(3) { order: 3; }
+    .hebergements-cards .card:nth-of-type(4) { order: 4; }
+    .hebergements-cards .card:nth-of-type(5) { order: 2; }
+    .hebergements-cards .card:nth-of-type(6) { order: 5; }
+
+    .activités {
+        margin: 35px 0px 0px 0px;
+    }
+    .activités-cards {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+    }
+    .activités-cards .card{
+        margin-bottom: 15px;
+    }
+    .activités-cards img {
+        width: 100%;
+        height: 141px;
+}
+.activités-cards .card-txt {
+    max-width: none
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+}
+.a-propos, .nos-hebergements, .assistance {
+    padding: 30px;
+    width: auto;
+}
+
 }
