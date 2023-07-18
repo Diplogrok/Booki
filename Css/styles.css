@@ -1,8 +1,6 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
-  margin: 0;
-  max-width: 1440px;
 }
 
 h1 {
@@ -49,6 +47,7 @@ header {
 .linkr {
   padding: 14px 0px;
   margin-inline-start: 68px;
+  border-top: solid transparent;
 }
 
 .linkr:hover {
@@ -123,6 +122,7 @@ input {
 
 .sub.mobile {
   display: none;
+  cursor: pointer;
 }
 
 #rechercher {
@@ -438,8 +438,7 @@ footer {
   }
 
   .populaires-cards .card {
-    height: auto;
-    width: 275px;
+    max-width: 275px;
   }
 
   .populaires-cards .card-title {
