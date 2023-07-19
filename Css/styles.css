@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -46,8 +47,8 @@ header {
 
 .linkr {
   padding: 14px 0px;
+  border-top: solid transparent 2px;
   margin-inline-start: 68px;
-  border-top: solid transparent;
 }
 
 .linkr:hover {
@@ -183,18 +184,20 @@ input {
   color: #d9d9d9;
 }
 
-/****** test border autour du logo free font awesome ***********/
-.fa-info {
-  display: none;
+.info-logo {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: small;
   border: solid #d9d9d9 1px;
   border-radius: 50px;
   width: 22px;
   height: 22px;
   margin-right: 10px;
 }
-/*****************/
+
+.fa-info {
+  font-size: small;
+}
 
 /****** Body ***********/
 
@@ -256,14 +259,12 @@ body {
 
 .hebergements-cards {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 30px;
 }
 
 .hebergements-cards .card {
-  display: flex;
   margin-top: 33px;
   padding-bottom: 15px;
   flex-direction: column;
@@ -352,8 +353,7 @@ body {
 
 .activités-cards {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .activités-cards img {
@@ -433,29 +433,20 @@ footer {
 
   .populaires-cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
   }
 
   .populaires-cards .card {
-    max-width: 275px;
+    max-width: 265px;
   }
 
-  .populaires-cards .card-title {
-    font-size: 14px;
-  }
-
-  .populaires-cards .card-subtitle {
-    font-size: 13px;
+  .populaires-cards img {
+    height: 146px;
   }
 
   .activités-cards img {
-    width: 210px;
+    max-width: 100%;
     height: 200px;
-  }
-
-  .activités-cards .card-txt {
-    max-width: 170px;
   }
 }
 
@@ -488,7 +479,7 @@ footer {
 
   .linkr:hover {
     color: #0065fc;
-    border-top: transparent;
+    border-top: solid transparent 2px;
     border-bottom: #0065fc solid 2px;
   }
 
@@ -563,7 +554,7 @@ footer {
   }
 
   .populaires-cards .card {
-    width: 100%;
+    max-width: none;
     margin-top: 15px;
   }
 
